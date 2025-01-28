@@ -17,7 +17,8 @@
 :start
 echo Edd world Boot menu!
 echo On Line - please wait 8 sconds and Example menu will load
-sleep 8
+echo your base URL is ${base-url}
+sleep 4
 goto custom
 
 :custom
