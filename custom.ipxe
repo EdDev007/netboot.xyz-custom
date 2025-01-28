@@ -1,18 +1,12 @@
-:custom Boot Menu
-item custom1 My Custom Boot Image 1
-item custom2 My Custom Boot Image 2
-choose --default custom1 --timeout 5000 target && goto ${target}
+#!ipxe
+###
+### netboot.xyz-custom menu
+###
 
-:custom1
-kernel /assets/custom-kernel1
-initrd /assets/custom-initrd1
-boot
+:start
+echo Hello world!
+sleep 10
+goto custom_exit
 
-:custom2
-kernel /assets/custom-kernel2
-initrd /assets/custom-initrd2
-boot
-
-
-
-
+:custom_exit
+exit 0
