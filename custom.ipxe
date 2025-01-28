@@ -14,11 +14,16 @@
 ##############
 #copied in
 ##############
+:start
+echo Edd world Boot menu!
+echo On Line - please wait 8 sconds and Example menu will load
+sleep 8
+goto custom
 
 :custom
 echo Edd world Boot menu!
 clear custom_choice
-menu This is a MY Test Menu
+menu This is a MY Edd Test Menu
 item --gap This is the first sub menu
 item option_one ${space} Loading a kernel and initrd
 item option_two ${space} Loading an ISO
